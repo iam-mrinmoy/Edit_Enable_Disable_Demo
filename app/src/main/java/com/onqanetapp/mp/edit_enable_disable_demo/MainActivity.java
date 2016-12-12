@@ -34,7 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-       
+        btnTest=(Button)findViewById(R.id.btnTest);
+        btnTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view,"First Test",Snackbar.LENGTH_LONG).show();
+            }
+        });
        /* edtFname.setFocusable(false);
         edtFname.setFocusableInTouchMode(false);*/
         edtFname.setInputType(InputType.TYPE_NULL);
